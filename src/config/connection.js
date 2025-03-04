@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const URI =`mongodb+srv://superAdso:uBy0r5CbOmr3i9ZY@clusteradsi.nzwbkjo.mongodb.net/${process.env.BD}`
+const URI =`mongodb+srv://${process.env.USUARIOBD}:${process.env.PASSBD}@clusteradsi.nzwbkjo.mongodb.net/${process.env.BD}`
 
 mongoose.connect(URI);
 
